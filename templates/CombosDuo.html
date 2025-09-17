@@ -1,0 +1,149 @@
+{% extends "layout.html" %}
+{% block title %}Combos de streaming al mejor precio{%endblock%}
+
+{% block main%}
+
+<!------------------------------COMBOS-------------------------------------------->
+<div class="container-fluid my-5 py-5" style="background-color: #04539A;">
+    <div class="text-center text-white mb-4">
+        <h1 class="fw-bold">COMBOS DUO</h1>
+    </div>
+
+    <div class="row  g-4">
+
+        <!-- Combo 1 -->
+        <div class="col-md-6">
+            <div class="bg-white rounded-4 p-4 text-center shadow-sm">
+                <p class="fw-bold text-white bg-primary py-2 rounded-3">COMBO #1</p>
+                <div class="d-flex flex-column flex-md-row align-items-center justify-content-center my-3">
+                    <img class="img-fluid" src="{{ url_for('static', filename='img/plataformas/200-100 Netflix.svg') }}" alt="Combo netflix 2">
+                    <span class="fs-1 fw-bold mx-3 text-dark">+</span>
+                    <img class="img-fluid" src="{{ url_for('static', filename='img/plataformas/200-100Crunchyroll.svg') }}" alt="Combo Crunchyroll">
+                </div>
+                <p class="fw-bold  fs-4">C$ 220.00/ mes</p>
+                <button class="btn btn-warning fw-bold">Contratar</button>
+            </div>
+        </div>
+
+        <!-- Combo 2 -->
+        <div class="col-md-6">
+            <div class="bg-white rounded-4 p-4 text-center shadow-sm">
+                <p class="fw-bold text-white bg-primary py-2 rounded-3">COMBO #2</p>
+                <div class="d-flex flex-column flex-md-row align-items-center justify-content-center my-3">
+                    <img class="img-fluid " src="{{ url_for('static', filename='img/plataformas/200-100 Netflix.svg') }}" alt="Combo netflix 2">
+                    <span class="fs-1 fw-bold mx-3 text-dark">+</span>
+                    <img class="img-fluid " src="{{ url_for('static', filename='img/plataformas/200-100 HboMax.svg') }}" alt="Combo HBO Max">
+                </div>
+                <p class="fw-bold  fs-4">C$ 220.00/ mes</p>
+                <button class="btn btn-warning fw-bold">Contratar</button>
+            </div>
+        </div>
+
+    </div>
+
+    <!---------------------------------Fila2------------------------------->
+
+    <div class="row g-4 my-2">
+
+        <!-- Combo 1 -->
+        <div class="col-md-6">
+            <div class="bg-white rounded-4 p-4 text-center shadow-sm">
+                <p class="fw-bold text-white bg-primary py-2 rounded-3">COMBO #3</p>
+                <div class="d-flex flex-column flex-md-row align-items-center justify-content-center my-3">
+                    <img class="img-fluid" src="{{ url_for('static', filename='img/plataformas/200-100 Netflix.svg') }}" alt="Combo netflix 3">
+                    <span class="fs-1 fw-bold mx-3 text-dark">+</span>
+                    <img class="img-fluid" src="{{ url_for('static', filename='img/plataformas/200-100 Prime Video.svg') }}" alt="Combo Prime Video">
+                </div>
+                <p class="fw-bold fs-4">C$ 220.00 / mes</p>
+                <button class="btn btn-warning fw-bold">Contratar</button>
+            </div>
+        </div>
+
+        <!-- Combo 2 -->
+        <div class="col-md-6">
+            <div class="bg-white rounded-4 p-4 text-center shadow-sm">
+                <p class="fw-bold text-white bg-primary py-2 rounded-3">COMBO #4</p>
+                <div class="d-flex flex-column flex-md-row align-items-center justify-content-center my-3">
+                    <img class="img-fluid" src="{{ url_for('static', filename='img/plataformas/200-100 Netflix.svg') }}" alt="Combo netflix 4">
+                    <span class="fs-1 fw-bold mx-3 text-dark">+</span>
+                    <img class="img-fluid" src="{{ url_for('static', filename='img/plataformas/200-100 Spotify.svg') }}" alt="Combo Spotify">
+                </div>
+                <p class="fw-bold fs-4">C$ 250.00/ mes</p>
+                <button class="btn btn-warning fw-bold">Contratar</button>
+            </div>
+        </div>
+
+    </div>
+
+    <!---------------------------------Fila3------------------------------->
+
+    <div class="row g-4 my-2">
+
+        <!-- Combo 1 -->
+        <div class="col-md-6">
+            <div class="bg-white rounded-4 p-4 text-center shadow-sm">
+                <p class="fw-bold text-white bg-primary py-2 rounded-3">COMBO #5</p>
+                <div class="d-flex flex-column flex-md-row align-items-center justify-content-center my-3">
+                    <img class="img-fluid" src="{{ url_for('static', filename='img/plataformas/200-100 Netflix.svg') }}" alt="Combo netflix 5">
+                    <span class="fs-1 fw-bold mx-3 text-dark">+</span>
+                    <img class="img-fluid" src="{{ url_for('static', filename='img/plataformas/200-100 Disney.svg') }}" alt="Combo Disney">
+                </div>
+                <p class="fw-bold fs-4">C$ 290.00 / mes</p>
+                <button class="btn btn-warning fw-bold">Contratar</button>
+            </div>
+        </div>
+
+        <!-- Combo 2 -->
+        <div class="col-md-6">
+            <div class="bg-white rounded-4 p-4 text-center shadow-sm">
+                <p class="fw-bold text-white bg-primary py-2 rounded-3">COMBO #6</p>
+                <div class="d-flex flex-column flex-md-row align-items-center justify-content-center my-3">
+                    <img class="img-fluid" src="{{ url_for('static', filename='img/plataformas/200-100 Netflix.svg') }}" alt="Combo netflix 6">
+                    <span class="fs-1 fw-bold mx-3 text-dark">+</span>
+                    <img class="img-fluid" src="{{ url_for('static', filename='img/plataformas/200-100 YouTube.svg') }}" alt="Combo YouTube Premium">
+                </div>
+                <p class="fw-bold  fs-4">C$ 280.00/ mes</p>
+                <button class="btn btn-warning fw-bold">Contratar</button>
+            </div>
+        </div>
+
+    </div>
+
+
+
+        <!---------------------------------Fila4------------------------------->
+
+    <div class="row g-4 my-2">
+
+        <!-- Combo 1 -->
+        <div class="col-md-6">
+            <div class="bg-white rounded-4 p-4 text-center shadow-sm">
+                <p class="fw-bold text-white bg-primary py-2 rounded-3">COMBO #7</p>
+                <div class="d-flex flex-column flex-md-row align-items-center justify-content-center my-3">
+                    <img class="img-fluid" src="{{ url_for('static', filename='img/plataformas/200-100 Netflix.svg') }}" alt="Combo netflix 7">
+                    <span class="fs-1 fw-bold mx-3 text-dark">+</span>
+                    <img class="img-fluid" src="{{ url_for('static', filename='img/plataformas/200-100 Vix.svg') }}" alt="Combo Vix Premium">
+                </div>
+                <p class="fw-bold fs-4">C$ 220.00 / mes</p>
+                <button class="btn btn-warning fw-bold">Contratar</button>
+            </div>
+        </div>
+
+        <!-- Combo 2 -->
+        <div class="col-md-6">
+            <div class="bg-white rounded-4 p-4 text-center shadow-sm">
+                <p class="fw-bold text-white bg-primary py-2 rounded-3">COMBO #8</p>
+                <div class="d-flex flex-column flex-md-row align-items-center justify-content-center my-3">
+                    <img class="img-fluid" src="{{ url_for('static', filename='img/plataformas/200-100 Prime Video.svg') }}" alt="Combo PrimeVideo8">
+                    <span class="fs-1 fw-bold mx-3 text-dark">+</span>
+                    <img class="img-fluid" src="{{ url_for('static', filename='img/plataformas/200-100 HboMax.svg') }}" alt="Combo Hbo Max">
+                </div>
+                <p class="fw-bold  fs-4">C$ 180.00/ mes</p>
+                <button class="btn btn-warning fw-bold">Contratar</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+{% endblock%}

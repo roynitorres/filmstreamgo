@@ -57,7 +57,8 @@ Flask
 gunicorn
 cs50Flask
 gunicorn
-cs50platformdirs==4.4.0
+cs50
+platformdirs==4.4.0
 pluggy==1.6.0
 psutil==7.0.0
 ptyprocess==0.7.0

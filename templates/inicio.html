@@ -48,82 +48,98 @@
 
     <div class="row g-3 py-2 px-2 d-flex align-items-stretch">
 
-        <div class="col-md-3 mb-4 d-flex">
-            <div class="card shadow-lg rounded-2">
+        <div class="col-12 col-md-3  mb-4 d-flex">
+            <div class="card shadow-lg rounded-2 w-100">
                 <img src="{{url_for('static', filename='img/plataformas/Netflix.svg')}}" alt="Netflix en Nicaragua">
                 <div class="card-body p-3 d-flex flex-column">
                     <p class="card-title fw-bold fs-4">C$140.00</p>
                     <ul class="list-unstyled flex-grow-1">
-                        <li><i class="bi bi-check-circle-fill text-success me-2 fs-5"></i>Servicio Renovable</li>
-                        <li><i class="bi bi-check-circle-fill text-success me-2 fs-5"></i>Reproducción en 4K (Ultra HD) + HDR</li>
-                        <li><i class="bi bi-check-circle-fill text-success me-2 fs-5"></i>Acceso a 1 Pantalla a la vez</li>
-                        <li><i class="bi bi-check-circle-fill text-success me-2 fs-5"></i>Audio espacial de Netflix</li>
-                        <li><i class="bi bi-check-circle-fill text-success me-2 fs-5"></i>Series y películas sin publicidad y sin
-                            límite</li>
-                        <li><i class="bi bi-check-circle-fill text-success me-2 fs-5"></i>Descarga contenido para ver offline.
+                        <li><i class="bi bi-check-circle-fill text-success me-2 fs-5"></i>Suscripción Mensual.</li>
+                        <li><i class="bi bi-check-circle-fill text-success me-2 fs-5"></i>Acceso a Tv y Teléfono Móvil.
+                        </li>
+                        <li><i class="bi bi-check-circle-fill text-success me-2 fs-5"></i>Reproducción de 1 Pantalla a
+                            la vez.</li>
+                        <li><i class="bi bi-check-circle-fill text-success me-2 fs-5"></i>Restricciones de Actualizar
+                            Hogar.</li>
+                        <li><i class="bi bi-check-circle-fill text-success me-2 fs-5"></i>Descargar contenido para ver
+                            offline.
                         </li>
                     </ul>
-                    <button class="btn btn-warning fw-bold mt-auto">Contratar Ahora</button>
+                    <button class="btn btn-warning fw-bold mt-auto contratar-btn" data-plataforma="Netflix">Contratar
+                        Ahora</button>
                 </div>
             </div>
         </div>
 
-        <div class="col-md-3 mb-4 d-flex">
-            <div class="card shadow-lg">
+        <div class="col-12 col-md-3  mb-4 d-flex">
+            <div class="card shadow-lg w-100">
                 <img src="{{url_for('static', filename='img/plataformas/200-200 NetflixPrivada.svg')}}"
                     alt="Netflix Privado">
                 <div class="card-body d-flex flex-column">
                     <p class="card-title fw-bold fs-4">C$180.00</p>
                     <ul class="list-unstyled flex-grow-1">
-                        <li><i class="bi bi-check-circle-fill text-success me-2 fs-5"></i>Servicio Renovable</li>
-                        <li><i class="bi bi-check-circle-fill text-success me-2 fs-5"></i>Reproducción en 4K (Ultra HD) + HDR</li>
-                        <li><i class="bi bi-check-circle-fill text-success me-2 fs-5"></i>Acceso a 1 Pantalla a la vez</li>
-                        <li><i class="bi bi-check-circle-fill text-success me-2 fs-5"></i>Audio espacial de Netflix</li>
-                        <li class="text-danger fw-bold"><i class="bi bi-check-circle-fill text-success me-2 fs-5"></i>Libertad para ver Netflix desde fuera de
-                            su hogar</li>
-                        <li><i class="bi bi-check-circle-fill text-success me-2 fs-5"></i>Descarga contenido para ver offline.
+                        <li><i class="bi bi-check-circle-fill text-success me-2 fs-5"></i>Suscripción Mensual.</li>
+                        <li><i class="bi bi-check-circle-fill text-success me-2 fs-5"></i>Acceso a Tv y Teléfono Móvil.
+                        </li>
+                        <li><i class="bi bi-check-circle-fill text-success me-2 fs-5"></i>Reproducción de 1 Pantalla a
+                            la vez.</li>
+                        <li class="text-danger fw-bold"><i
+                                class="bi bi-check-circle-fill text-success me-2 fs-5"></i>Sin restriccion de Actulizar
+                            Hogar.</li>
+                        <li><i class="bi bi-check-circle-fill text-success me-2 fs-5"></i>No necesita pin de Acceso.
                         </li>
                     </ul>
-                    <button class="btn btn-warning fw-bold mt-auto">Contratar Ahora</button>
+                    <button class="btn btn-warning fw-bold mt-auto contratar-btn"
+                        data-plataforma="Netflix Privado">Contratar Ahora</button>
                 </div>
             </div>
 
         </div>
-        <div class="col-md-3 mb-4 d-flex">
-            <div class="card  shadow-lg">
+        <div class="col-12 col-md-3  mb-4 d-flex">
+            <div class="card  shadow-lg w-100">
                 <img src="{{url_for('static', filename='img/plataformas/200-200 Disney Premium.svg')}}"
                     alt="Disney Premium en Nicaragua">
                 <div class="card-body d-flex flex-column">
                     <p class="card-title fw-bold fs-4">C$160.00</p>
                     <ul class="list-unstyled flex-grow-1">
-                        <li><i class="bi  bi-check-circle-fill text-success me-2 fs-5"></i>Servicio Renovable.</li>
-                        <li><i class="bi  bi-check-circle-fill text-success me-2 fs-5"></i>Catálogo completo de Disney+.</li>
-                        <li><i class="bi  bi-check-circle-fill text-success me-2 fs-5"></i>Todos los canales de ESPN.</li>
-                        <li class="text-danger fw-bold"><i class="bi  bi-check-circle-fill text-success me-2 fs-5"></i>Canales SPN para ver en Vivo</li>
-                        <li><i class="bi  bi-check-circle-fill text-success me-2 fs-5"></i>Descarga contenido para ver offline.
+                        <li><i class="bi  bi-check-circle-fill text-success me-2 fs-5"></i>Suscripción Mensual.</li>
+                        <li><i class="bi  bi-check-circle-fill text-success me-2 fs-5"></i>Acceso a Tv y Teléfono Móvil.
+                        </li>
+                        <li><i class="bi  bi-check-circle-fill text-success me-2 fs-5"></i>Reproducción de 1 Pantalla a
+                            la vez.</li>
+                        <li class="text-danger fw-bold"><i
+                                class="bi  bi-check-circle-fill text-success me-2 fs-5"></i>Transm. SPN para ver
+                            en Vivo.</li>
+                        <li><i class="bi  bi-check-circle-fill text-success me-2 fs-5"></i>Descarga contenido para ver
+                            offline.
                         </li>
                     </ul>
-                     <button class="btn btn-warning fw-bold mt-auto">Contratar Ahora</button>
+                    <button class="btn btn-warning fw-bold mt-auto contratar-btn"
+                        data-plataforma="Disney Premium">Contratar Ahora</button>
 
                 </div>
             </div>
 
         </div>
-        <div class="col-md-3 mb-4 d-flex">
-            <div class="card shadow-lg">
+        <div class="col-12 col-md-3  mb-4 d-flex">
+            <div class="card shadow-lg w-100">
                 <img src="{{url_for('static', filename='img/plataformas/200-200 Disney Standar.svg')}}"
                     alt="Disney standar Nicaragua">
                 <div class="card-body d-flex flex-column">
                     <p class="card-title fw-bold fs-4">C$130.00</p>
                     <ul class="list-unstyled flex-grow-1">
-                        <li><i class="bi  bi-check-circle-fill text-success me-2 fs-5"></i>Servicio Renovable.</li>
-                        <li><i class="bi  bi-check-circle-fill text-success me-2 fs-5"></i>Catálogo completo de Disney+.</li>
-                        <li><i class="bi  bi-check-circle-fill text-success me-2 fs-5"></i>Todos los canales de ESPN.</li>
-                        <li><i class="bi  bi-check-circle-fill text-success me-2 fs-5"></i>Películas y series de Star.</li>
-                        <li><i class="bi  bi-check-circle-fill text-success me-2 fs-5"></i>Descarga contenido para ver offline.
+                        <li><i class="bi  bi-check-circle-fill text-success me-2 fs-5"></i>Suscripción Mensual</li>
+                        <li><i class="bi  bi-check-circle-fill text-success me-2 fs-5"></i>Accceso a Tv y Teléfono Móvil
+                        </li>
+                        <li><i class="bi  bi-check-circle-fill text-success me-2 fs-5"></i>Reproducción de 1 Pantalla a
+                            la vez</li>
+                        <li><i class="bi  bi-check-circle-fill text-success me-2 fs-5"></i>Todo los canales de Spn</li>
+                        <li><i class="bi  bi-check-circle-fill text-success me-2 fs-5"></i>Descarga contenido para ver
+                            offline.
                         </li>
                     </ul>
-                     <button class="btn btn-warning fw-bold mt-auto">Contratar Ahora</button>
+                    <button class="btn btn-warning fw-bold mt-auto contratar-btn"
+                        data-plataforma="Disney standar">Contratar Ahora</button>
                 </div>
             </div>
 
@@ -134,72 +150,84 @@
 
     <!------------------------------------SEGUNDA FILA-->
 
-    <div class="row g-3 fs-5 px-2">
-        <div class="col-md-3 mb-4">
-            <div class="card shadow-lg">
+    <div class="row g-3 px-2 d-flex align-items-stretch">
+        <div class="col-12 col-md-3 mb-4 d-flex">
+            <div class="card shadow-lg w-100">
                 <img src="{{url_for('static', filename='img/plataformas/Spotify.svg')}}" alt="Spotify nicaragua">
-                <div class="card-body">
+                <div class="card-body d-flex flex-column">
                     <p class="card-title fw-bold fs-4">C$120.00</p>
                     <ul class="list-unstyled">
-                        <li><i class="bi  bi-check-circle-fill text-success me-2 fs-5"></i>Servicio Renovable.</li>
-                        <li><i class="bi  bi-check-circle-fill text-success me-2 fs-5"></i>Escucha Músicas sin anuncio.</li>
-                        <li><i class="bi  bi-check-circle-fill text-success me-2 fs-5"></i>Descarga contenido para escuchar offline.</li>
-                        <li><i class="bi  bi-check-circle-fill text-success me-2 fs-5"></i>Reproduce canciones en el orden que quieras. </li>
-                        <li><i class="bi  bi-check-circle-fill text-success me-2 fs-5"></i>Disfruta de audio de alta calidad.</li>
-                        <li><i class="bi  bi-check-circle-fill text-success me-2 fs-5"></i>Escucha contenido con tu persona favorita en tiempo real.</li>
-                        <li><i class="bi  bi-check-circle-fill text-success me-2 fs-5"></i>Organiza la fila de reproducción.</li>
+                        <li><i class="bi  bi-check-circle-fill text-success me-2 fs-5"></i>Suscripción Mensual</li>
+                        <li><i class="bi  bi-check-circle-fill text-success me-2 fs-5"></i>Escucha Músicas sin anuncio.
+                        </li>
+                        <li><i class="bi  bi-check-circle-fill text-success me-2 fs-5"></i>Contenido para
+                            escuchar offline.</li>
+                        <li><i class="bi  bi-check-circle-fill text-success me-2 fs-5"></i>Canciones en el
+                            orden que quieras. </li>
+                        <li><i class="bi  bi-check-circle-fill text-success me-2 fs-5"></i>Audio de alta
+                            calidad.</li>
                     </ul>
+                    <button class="btn btn-warning fw-bold mt-auto contratar-btn" data-plataforma="Spotify">Contratar
+                        Ahora</button>
                 </div>
             </div>
         </div>
-        <div class="col-md-3 mb-4">
-            <div class="card shadow-lg">
+        <div class="col-12 col-md-3 mb-4 d-flex">
+            <div class="card shadow-lg w-100">
                 <img src="{{url_for('static', filename='img/plataformas/Vix.svg')}}" alt="Vix Premium">
-                <div class="card-body">
+                <div class="card-body d-flex flex-column">
                     <p class="card-title fw-bold fs-4">C$100.00</p>
                     <ul class="list-unstyled">
-                        <li><i class="bi bi-check-lg text-danger me-2 fs-3"></i>Servicio Renovable.</li>
-                        <li><i class="bi bi-check-lg text-danger me-2 fs-3"></i>Series originales para todos los gusto.</li>
-                        <li><i class="bi bi-check-lg text-danger me-2 fs-3"></i>Estreno de peliculas exclusivas</li>
-                        <li><i class="bi bi-check-lg text-danger me-2 fs-3"></i>Noticias para ver 24/7</li>
-                        <li><i class="bi bi-check-lg text-danger me-2 fs-3"></i>Deporte premium en vivo</li>
+                        <li><i class="bi bi-check-circle-fill text-success me-2 fs-5"></i>Suscripción Mensual</li>
+                        <li><i class="bi bi-check-circle-fill text-success me-2 fs-5"></i>Acceso a Tv y Teléfono Móvil
+                        </li>
+                        <li><i class="bi bi-check-circle-fill text-success me-2 fs-5"></i>Reproducción de 1 Pantalla a
+                            la vez</li>
+                        <li><i class="bi bi-check-circle-fill text-success me-2 fs-5"></i>Noticias para ver 24/7</li>
+                        <li><i class="bi bi-check-circle-fill text-success me-2 fs-5"></i>Deporte premium en vivo</li>
                     </ul>
-
+                    <button class="btn btn-warning fw-bold mt-auto contratar-btn"
+                        data-plataforma="Vix Premium">Contratar Ahora</button>
                 </div>
             </div>
 
         </div>
-        <div class="col-md-3 mb-4">
-            <div class="card  shadow-lg">
+        <div class="col-12 col-md-3 mb-4 d-flex">
+            <div class="card  shadow-lg w-100">
                 <img src="{{url_for('static', filename='img/plataformas/Youtube.svg')}}" alt="Youtube Premium">
-                <div class="card-body">
+                <div class="card-body d-flex flex-column">
                     <p class="card-title fw-bold fs-4">C$150.00</p>
                     <ul class="list-unstyled">
-                        <li><i class="bi bi-check-lg text-danger me-2 fs-3"></i>Servicio Renovable.</li>
-                        <li><i class="bi bi-check-lg text-danger me-2 fs-3"></i>Sin Anuncios.</li>
-                        <li><i class="bi bi-check-lg text-danger me-2 fs-3"></i>Reproducción en Segundo Plano.</li>
-                        <li><i class="bi bi-check-lg text-danger me-2 fs-3"></i>Descargas Offline.</li>
-                        <li><i class="bi bi-check-lg text-danger me-2 fs-3"></i>YouTube Music Premium.</li>
+                        <li><i class="bi bi-check-circle-fill text-success me-2 fs-5"></i>Suscripción Mensual</li>
+                        <li><i class="bi bi-check-circle-fill text-success me-2 fs-5"></i>Sin Anuncios.</li>
+                        <li><i class="bi bi-check-circle-fill text-success me-2 fs-5"></i>Reproducción en Segundo Plano.
+                        </li>
+                        <li><i class="bi bi-check-circle-fill text-success me-2 fs-5"></i>Descargas Offline.</li>
+                        <li><i class="bi bi-check-circle-fill text-success me-2 fs-5"></i>YouTube Music Premium.</li>
                     </ul>
-
+                    <button class="btn btn-warning fw-bold mt-auto contratar-btn"
+                        data-plataforma="YouTube Premium">Contratar Ahora</button>
                 </div>
             </div>
 
         </div>
-        <div class="col-md-3 mb-4">
-            <div class="card  shadow-lg">
+        <div class="col-12 col-md-3 mb-4 d-flex">
+            <div class="card  shadow-lg w-100">
                 <img src="{{url_for('static', filename='img/plataformas/Crunchyroll.svg')}}"
                     alt="Crunchyroll Nicaragua">
-                <div class="card-body ">
+                <div class="card-body d-flex flex-column">
                     <p class="card-text fw-bold fs-4">C$100.00</p>
                     <ul class="list-unstyled">
-                        <li><i class="bi bi-check-lg text-danger me-2 fs-3"></i>Servicio Renovable.</li>
-                        <li><i class="bi bi-check-lg text-danger me-2 fs-3"></i>Amplio catálogo de anime</li>
-                        <li><i class="bi bi-check-lg text-danger me-2 fs-3"></i>Simulcast</li>
-                        <li><i class="bi bi-check-lg text-danger me-2 fs-3"></i>Doblajes y subtítulos.</li>
-                        <li><i class="bi bi-check-lg text-danger me-2 fs-3"></i>Descargas offline.</li>
+                        <li><i class="bi bi-check-circle-fill text-success me-2 fs-5"></i>Suscripción Mensual</li>
+                        <li><i class="bi bi-check-circle-fill text-success me-2 fs-5"></i>Accceso a Tv y Teléfono Móvil
+                        </li>
+                        <li><i class="bi bi-check-circle-fill text-success me-2 fs-5"></i>Reproducción de 1 Pantalla a
+                            la vez</li>
+                        <li><i class="bi bi-check-circle-fill text-success me-2 fs-5"></i>Doblajes y subtítulos.</li>
+                        <li><i class="bi bi-check-circle-fill text-success me-2 fs-5"></i>Descargas offline.</li>
                     </ul>
-
+                    <button class="btn btn-warning fw-bold mt-auto contratar-btn"
+                        data-plataforma="Crunchyroll">Contratar Ahora</button>
                 </div>
             </div>
 
@@ -209,34 +237,40 @@
 
     <!------------------------------------Tercera FILA-->
 
-    <div class="row g-3 fs-5 px-2">
-        <div class="col-md-3 mb-4">
-            <div class="card shadow-lg">
+    <div class="row g-3 px-2 d-flex align-items-stretch">
+        <div class="col-12 col-md-3 mb-4 d-flex">
+            <div class="card shadow-lg w-100">
                 <img src="{{url_for('static', filename='img/plataformas/HboMax.svg')}}" alt="Hbo Max Nicaragua">
-                <div class="card-body">
+                <div class="card-body d-flex flex-column">
                     <p class="card-title fw-bold fs-4">C$90.00</p>
                     <ul class="list-unstyled">
-                        <li><i class="bi bi-check-lg text-danger me-2 fs-3"></i>Servicio Renovable.</li>
-                        <li><i class="bi bi-check-lg text-danger me-2 fs-3"></i>Resolucion Full HD</li>
-                        <li><i class="bi bi-check-lg text-danger me-2 fs-3"></i>Estreno de peliculas exclusivas</li>
-                        <li><i class="bi bi-check-lg text-danger me-2 fs-3"></i>Descargas offline.</li>
+                        <li><i class="bi bi-check-circle-fill text-success me-2 fs-5"></i>Suscripción Mensual</li>
+                        <li><i class="bi bi-check-circle-fill text-success me-2 fs-5"></i>Acceso a Tv y Teléfono Móvil
+                        </li>
+                        <li><i class="bi bi-check-circle-fill text-success me-2 fs-5"></i>Reproducción de 1 Pantalla a
+                            la vez</li>
+                        <li><i class="bi bi-check-circle-fill text-success me-2 fs-5"></i>Descargas offline.</li>
                     </ul>
-
+                    <button class="btn btn-warning fw-bold mt-auto contratar-btn" data-plataforma="Hbo Max">Contratar
+                        Ahora</button>
                 </div>
             </div>
         </div>
-        <div class="col-md-3 mb-4">
-            <div class="card shadow-lg">
+        <div class="col-12 col-md-3 mb-4 d-flex">
+            <div class="card shadow-lg w-100">
                 <img src="{{url_for('static', filename='img/plataformas/Prime Video.svg')}}" alt="Prime Video">
-                <div class="card-body">
+                <div class="card-body d-flex flex-column">
                     <p class="card-title fw-bold fs-4">C$90.00</p>
                     <ul class="list-unstyled">
-                        <li><i class="bi bi-check-lg text-danger me-2 fs-3"></i>Servicio Renovable.</li>
-                        <li><i class="bi bi-check-lg text-danger me-2 fs-3"></i>Amplio catalogo de contenido.</li>
-                        <li><i class="bi bi-check-lg text-danger me-2 fs-3"></i>Función X-Ray</li>
-                        <li><i class="bi bi-check-lg text-danger me-2 fs-3"></i>Descargas offline.</li>
+                        <li><i class="bi bi-check-circle-fill text-success me-2 fs-5"></i>Suscripción Mensual</li>
+                        <li><i class="bi bi-check-circle-fill text-success me-2 fs-5"></i>Acceso a Tv y Teléfono Móvil
+                        </li>
+                        <li><i class="bi bi-check-circle-fill text-success me-2 fs-5"></i>Reproducción de 1 Pantalla a
+                            la vez</li>
+                        <li><i class="bi bi-check-circle-fill text-success me-2 fs-5"></i>Descargas offline.</li>
                     </ul>
-
+                    <button class="btn btn-warning fw-bold mt-auto contratar-btn"
+                        data-plataforma="Prime Video">Contratar Ahora</button>
                 </div>
             </div>
 

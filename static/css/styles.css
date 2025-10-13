@@ -20,13 +20,17 @@
     box-shadow: 0 10px 20px rgba(0,0,0,0.25)
 }
 
-/* Color al pasar el mouse */
+.navbar .nav-link {
+  transition: color 0.2s ease;
+}
+
+/* Efecto hover */
 .navbar .nav-link:hover {
   color: #FFCE00 !important;
 }
 
-/* Color fijo para el enlace activo */
+/* Enlace activo fijo */
 .navbar .nav-link.active {
   color: #FFCE00 !important;
-  font-weight: 600; /* opcional, para destacarlo un poco más */
+  font-weight: 600;
 }

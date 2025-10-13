@@ -24,13 +24,4 @@
   transition: color 0.2s ease;
 }
 
-/* Efecto hover */
-.navbar .nav-link:hover {
-  color: #FFCE00 !important;
-}
 
-/* Enlace activo fijo */
-.navbar .nav-link.active {
-  color: #FFCE00 !important;
-  font-weight: 600;
-}

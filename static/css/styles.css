@@ -31,10 +31,10 @@
     position: absolute;
     top: 12px;
     left: 12px;
-    background-color: #0d6efd; /* Azul Bootstrap */
+    background-color: #07419c; /* Azul Bootstrap */
     color: white;
     padding: 5px 12px;
     font-weight: bold;
     border-radius: 5px;
-    font-size: 14px;
+    font-size: 15px;
 }

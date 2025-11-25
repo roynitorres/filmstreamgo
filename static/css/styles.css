@@ -27,3 +27,18 @@
 }
 
 
+.ribbon {
+    position: absolute;
+        top: 0;
+        left: 0;
+        background: #e53935;
+        /* Rojo como el de la imagen */
+        color: white;
+        padding: 5px 5px;
+        font-size: 12px;
+        font-weight: bold;
+        transform: translate(-30%, -30%) rotate(-45deg);
+        text-transform: uppercase;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        pointer-events: none;
+}

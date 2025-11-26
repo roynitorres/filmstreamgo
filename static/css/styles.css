@@ -27,18 +27,23 @@
 }
 
 
-.ribbon {
+.triangulo-nuevo {
     position: absolute;
-        top: 15px;
-        left: 13px;
-        background: #e53935;
-        /* Rojo como el de la imagen */
-        color: white;
-        padding: 10px 5px;
-        font-size: 15px;
-        font-weight: bold;
-        transform: translate(-30%, -30%) rotate(-45deg);
-        text-transform: uppercase;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-        pointer-events: none;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-top: 60px solid #e53935; /* Color rojo del triángulo */
+    border-right: 60px solid transparent;
+}
+
+.triangulo-nuevo span {
+    position: absolute;
+    top: -48px;       /* Baja el texto al centro del triángulo */
+    left: -5px;       /* Ajusta para centrar */
+    transform: rotate(-45deg);
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
 }

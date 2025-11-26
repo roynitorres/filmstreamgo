@@ -35,7 +35,7 @@
         /* Rojo como el de la imagen */
         color: white;
         padding: 5px 5px;
-        font-size: 15px;
+        font-size: 20px;
         font-weight: bold;
         transform: translate(-30%, -30%) rotate(-45deg);
         text-transform: uppercase;

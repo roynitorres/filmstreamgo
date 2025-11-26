@@ -35,6 +35,7 @@
     height: 0;
     border-top: 80px solid #07419c; /* Color rojo del triángulo */
     border-right: 80px solid transparent;
+    border:4;
 }
 
 .triangulo-nuevo span {

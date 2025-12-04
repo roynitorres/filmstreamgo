@@ -156,15 +156,17 @@
         <script>
             (function() {
                 const btn = document.getElementById('btnVerMas');
-                const btn = document.getElementById('btnVerMas');
+                const btnCombos = document.getElementById('btnVerCombos');
                 const fila2 = document.getElementById('fila2');
                 const fila3 = document.getElementById('fila3');
+                const fila5 = document.getElementById('fila5');
+                const fila6 = document.getElementById('fila6');
 
                 // Estado: 0 = solo fila1, 1 = fila1+fila2, 2 = todas
                 let estado = 0;
 
                 // Setup inicial: convertimos d-none en hidden-row para poder animar
-                [fila2, fila3].forEach(f => {
+                [fila2, fila3, fila5, fila6].forEach(f => {
                     if (f) {
                         f.classList.add('hidden-row'); // invisible con transición
                         f.classList.remove('d-none');

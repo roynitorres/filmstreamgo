@@ -227,7 +227,7 @@
                             fila5.classList.remove('hidden-row');
                             fila5.classList.add('visible-row');
                             estado = 1;
-                            btn.textContent = 'Ver más Productos';
+                            btn.textContent = 'Ver más Combos';
                             // scroll suave para mostrar fila2 si queda fuera de vista
                             setTimeout(() => {
                                 fila5.scrollIntoView({ behavior: 'smooth', block: 'start' });
@@ -246,7 +246,7 @@
                             fila5.classList.remove('visible-row'); fila5.classList.add('hidden-row');
                             fila6.classList.remove('visible-row'); fila6.classList.add('hidden-row');
                             estado = 0;
-                            btn.textContent = 'Ver más Productos';
+                            btn.textContent = 'Ver más Combos';
                             // volver a la fila1
                             setTimeout(() => {
                                 document.getElementById('fila4').scrollIntoView({ behavior: 'smooth', block: 'start' });

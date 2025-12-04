@@ -55,11 +55,12 @@
                                 <a class="nav-link disabled" aria-disabled="true">-</a>
                             </li>
                         </ul>
-                        <form class="d-flex " role="search">
-                            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search" />
-                            <button class="btn btn text-black" type="submit"
-                                style="background-color:#FFCE00;">Buscar</button>
-                        </form>
+                        <a href="https://wa.me/50576145799?text=Hola%20quiero%20contratar%20una%20cuenta%20de%20streaming"
+                            target="_blank"
+                            class="btn d-inline-flex  align-items-center px-4 py-2 shadow-sm rounded-4 text-dark fs-3 fw-bold text-white">
+                            <!-- Ícono de WhatsApp -->
+                            <i class="bi bi-whatsapp fs-2 me-4  text-white"> 7614 5799</i>
+                        </a>
                     </div>
                 </div>
             </nav>
@@ -151,6 +152,66 @@
             integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
             crossorigin="anonymous"></script>
         <script src="{{ url_for('static', filename='js/main.js')}}"></script>
+
+        <script>
+            (function() {
+                const btn = document.getElementById('btnVerMas');
+                const fila2 = document.getElementById('fila2');
+                const fila3 = document.getElementById('fila3');
+
+                // Estado: 0 = solo fila1, 1 = fila1+fila2, 2 = todas
+                let estado = 0;
+
+                // Setup inicial: convertimos d-none en hidden-row para poder animar
+                [fila2, fila3].forEach(f => {
+                    if (f) {
+                        f.classList.add('hidden-row'); // invisible con transición
+                        f.classList.remove('d-none');
+                    }
+                });
+
+                btn.addEventListener('click', function() {
+                    if (estado === 0) {
+                        // mostrar fila2
+                        fila2.classList.remove('hidden-row');
+                        fila2.classList.add('visible-row');
+                        estado = 1;
+                        btn.textContent = 'Ver más Productos';
+                        // scroll suave para mostrar fila2 si queda fuera de vista
+                        setTimeout(() => {
+                            fila2.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        }, 320);
+                    } else if (estado === 1) {
+                        // mostrar fila3
+                        fila3.classList.remove('hidden-row');
+                        fila3.classList.add('visible-row');
+                        estado = 2;
+                        btn.textContent = 'Ver menos';
+                        setTimeout(() => {
+                            fila3.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        }, 320);
+                    } else {
+                        // ocultar fila2 y fila3
+                        fila2.classList.remove('visible-row'); fila2.classList.add('hidden-row');
+                        fila3.classList.remove('visible-row'); fila3.classList.add('hidden-row');
+                        estado = 0;
+                        btn.textContent = 'Ver más Productos';
+                        // volver a la fila1
+                        setTimeout(() => {
+                            document.getElementById('fila1').scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        }, 320);
+                    }
+                });
+            })();
+        </script>
+        <script>
+            function scrollToCombos() {
+                document.getElementById("combos-section").scrollIntoView({
+                    behavior: "smooth"
+                });
+            }
+        </script>
+
 
     </body>
 

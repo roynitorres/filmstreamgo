@@ -61,24 +61,13 @@
         <h1 class="text-white mb-0">
             TUS PLATAFORMAS <span class="fw-bold text-warning">FAVORITAS AQUÍ.</span>
         </h1>
-
-
-        <!-- Botón a la derecha -->
-        <a href="https://wa.me/50576145799?text=Hola%20quiero%20contratar%20una%20cuenta%20de%20streaming"
-            target="_blank"
-            class="btn d-inline-flex  align-items-center px-4 py-2 shadow-sm rounded-4 text-dark fs-3 fw-bold"
-            style="background-color: #FFCE00;">
-            <i class="bi bi-whatsapp fs-3 me-4 "></i> <!-- Ícono de WhatsApp -->
-            7614-5799
-        </a>
     </div>
 </div>
 
 
 <div class="container-fluid rounded-4 mt-4">
-    <div class="mx-4 px-4 ">
-        <div class="row g-5 py-4 d-flex align-items-stretch">
-            <!---->
+    <div class="mx-4 px-4 py-5">
+        <div id="fila1" class="row g-5 d-flex align-items-stretch">
             <div class="col-12 col-md-3  mb-4 d-flex">
                 <div class="card  rounded-4 w-100">
                     <img class="rounded-4" src="{{url_for('static', filename='img/plataformas/Net.svg')}}"
@@ -182,7 +171,7 @@
 
         <!------------------------------------SEGUNDA FILA-->
 
-        <div class="row g-5   d-flex align-items-stretch">
+        <div id="fila2" class="row g-5  d-flex align-items-stretch">
             <div class="col-12 col-md-3 mb-4 d-flex">
                 <div class="card rounded-4 w-100">
                     <img class="rounded-4" src="{{url_for('static', filename='img/plataformas/Spot.svg')}}"
@@ -275,7 +264,7 @@
 
         <!------------------------------------Tercera FILA-->
 
-        <div class="row g-5   d-flex align-items-stretch">
+        <div id="fila3" class="row g-5   d-flex align-items-stretch">
             <div class="col-12 col-md-3 mb-4 d-flex">
                 <div class="card rounded-4 w-100">
                     <img class="rounded-4" src="{{url_for('static', filename='img/plataformas/Hb.svg')}}"
@@ -323,28 +312,44 @@
         </div>
 
     </div>
+    <!-- BOTÓN -->
+    <div class="text-center mt-5">
+        <button id="btnVerMas" class="btn btn-primary px-5 py-2 rounded-4 fw-bold border border-1 text-with">Ver más
+            Productos</button>
+    </div>
 
 </div>
-</div>
+
 
 
 <!-------------------------------------------------------------------------->
+<!--Imagen de los combos-->
+
+<div class="container-fluid mt-5">
+    <div class="mx-5">
+        <div class="row">
+            <div class="col-md-6 d-flex justify-content-end">
+                <img class="rounded-5 " src="{{url_for('static', filename='img/Combos/Imagen de Combos.svg')}}"
+                    alt="Todas tus plataformas en un solo lugar.">
+            </div>
+            <div class="col-md-6 d-flex justify-content-center align-items-center text-center">
+                <h2 class="titulo-wordart">TUS COMBOS FAVORITOS ESTAN <span class="text-warning">AQUÍ</span><i
+                        class="bi bi-arrow-down fs-1 justify-content-center d-block mx-auto mt-2"
+                        style="cursor:pointer;" onclick="scrollToCombos()"></i></h2>
+            </div>
+        </div>
+    </div>
+</div>
+
+
 
 
 <div class="container-fluid py-5">
-    <div class="mx-4 px-4 py-4 rounded-top-4"
-        style="background: linear-gradient(90deg, #07419c, #1a53ff); box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);">
-        <h1 class=" text-white">También puedes elegir nuestros <span class="fw-bold text-warning">COMBOS DUOS.</span>
-        </h1>
-    </div>
-
-    <div class="mx-4 px-4 " style="background-color:#ededed;">
-        <div class="row py-4">
+    <div class="mx-4 px-4 ">
+        <div id="combos-section" class="row py-4">
             <div class="col-md-3 px-3 ">
-                <div class=" bg-white border-1 p-4 text-center shadow-sm position-relative">
-                    <div class="triangulo-nuevo">
-                        <span>Combo#1</span>
-                    </div>
+                <div class=" bg-white border-1 p-4 text-center shadow-sm">
+                    <p class="fw-bold text-white bg-primary py-2 rounded-3">COMBO #1</p>
                     <div class="d-flex flex-column  align-items-center justify-content-center my-3">
                         <img class="img-fluid" src="{{ url_for('static', filename='img/Combos/1.svg') }}"
                             alt="Combo netflix 2">
@@ -442,7 +447,6 @@
                             alt="Combo Disney">
                     </div>
                     <p class="fs-4 text-primary">C$ 290.00 /Mes</p>
-                    <!--<button class="btn btn-primary fw-bold">Contratar</button>-->
                 </div>
             </div>
 
@@ -472,7 +476,6 @@
                             alt="Combo Vix Premium">
                     </div>
                     <p class="fs-4 text-primary">C$ 220.00 /Mes</p>
-                    <!--<button class="btn btn-primary fw-bold">Contratar</button>-->
                 </div>
             </div>
 
@@ -498,7 +501,6 @@
                             alt="Combo Hbo Max">
                     </div>
                     <p class="fs-4 text-primary">C$ 180.00/Mes</p>
-                    <!--<button class="btn btn-primary fw-bold">Contratar</button>-->
                 </div>
             </div>
 

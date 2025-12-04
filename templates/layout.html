@@ -178,30 +178,42 @@
                         // mostrar fila2
                         fila2.classList.remove('hidden-row');
                         fila2.classList.add('visible-row');
+                        fila5.classList.remove('hidden-row');
+                        fila5.classList.add('visible-row');
                         estado = 1;
-                        btn.textContent = 'Ver más Productos';
+                        btn.textContent = 'Ver más Combos';
                         // scroll suave para mostrar fila2 si queda fuera de vista
                         setTimeout(() => {
                             fila2.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                            fila5.scrollIntoView({ behavior: 'smooth', block: 'start' });
                         }, 320);
+
+
                     } else if (estado === 1) {
                         // mostrar fila3
                         fila3.classList.remove('hidden-row');
                         fila3.classList.add('visible-row');
+                        fila6.classList.remove('hidden-row');
+                        fila6.classList.add('visible-row');
                         estado = 2;
                         btn.textContent = 'Ver menos';
                         setTimeout(() => {
                             fila3.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                            fila6.scrollIntoView({ behavior: 'smooth', block: 'start' });
                         }, 320);
                     } else {
                         // ocultar fila2 y fila3
                         fila2.classList.remove('visible-row'); fila2.classList.add('hidden-row');
                         fila3.classList.remove('visible-row'); fila3.classList.add('hidden-row');
+                        fila5.classList.remove('visible-row'); fila5.classList.add('hidden-row');
+                        fila6.classList.remove('visible-row'); fila6.classList.add('hidden-row');
+
                         estado = 0;
                         btn.textContent = 'Ver más Productos';
                         // volver a la fila1
                         setTimeout(() => {
                             document.getElementById('fila1').scrollIntoView({ behavior: 'smooth', block: 'start' });
+                            document.getElementById('fila4').scrollIntoView({ behavior: 'smooth', block: 'start' });
                         }, 320);
                     }
                 });

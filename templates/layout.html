@@ -156,17 +156,14 @@
         <script>
             (function() {
                 const btn = document.getElementById('btnVerMas');
-                const btnCombos = document.getElementById('btnVerCombos');
                 const fila2 = document.getElementById('fila2');
                 const fila3 = document.getElementById('fila3');
-                const fila5 = document.getElementById('fila5');
-                const fila6 = document.getElementById('fila6');
 
                 // Estado: 0 = solo fila1, 1 = fila1+fila2, 2 = todas
                 let estado = 0;
 
                 // Setup inicial: convertimos d-none en hidden-row para poder animar
-                [fila2, fila3, fila5, fila6].forEach(f => {
+                [fila2, fila3].forEach(f => {
                     if (f) {
                         f.classList.add('hidden-row'); // invisible con transición
                         f.classList.remove('d-none');
@@ -178,46 +175,86 @@
                         // mostrar fila2
                         fila2.classList.remove('hidden-row');
                         fila2.classList.add('visible-row');
-                        fila5.classList.remove('hidden-row');
-                        fila5.classList.add('visible-row');
                         estado = 1;
-                        btn.textContent = 'Ver más Combos';
+                        btn.textContent = 'Ver más Productos';
                         // scroll suave para mostrar fila2 si queda fuera de vista
                         setTimeout(() => {
                             fila2.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                            fila5.scrollIntoView({ behavior: 'smooth', block: 'start' });
                         }, 320);
-
-
                     } else if (estado === 1) {
                         // mostrar fila3
                         fila3.classList.remove('hidden-row');
                         fila3.classList.add('visible-row');
-                        fila6.classList.remove('hidden-row');
-                        fila6.classList.add('visible-row');
                         estado = 2;
                         btn.textContent = 'Ver menos';
                         setTimeout(() => {
                             fila3.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                            fila6.scrollIntoView({ behavior: 'smooth', block: 'start' });
                         }, 320);
                     } else {
                         // ocultar fila2 y fila3
                         fila2.classList.remove('visible-row'); fila2.classList.add('hidden-row');
                         fila3.classList.remove('visible-row'); fila3.classList.add('hidden-row');
-                        fila5.classList.remove('visible-row'); fila5.classList.add('hidden-row');
-                        fila6.classList.remove('visible-row'); fila6.classList.add('hidden-row');
-
                         estado = 0;
                         btn.textContent = 'Ver más Productos';
                         // volver a la fila1
                         setTimeout(() => {
                             document.getElementById('fila1').scrollIntoView({ behavior: 'smooth', block: 'start' });
-                            document.getElementById('fila4').scrollIntoView({ behavior: 'smooth', block: 'start' });
                         }, 320);
                     }
                 });
             })();
+
+
+            (function() {
+                    const btn = document.getElementById('btnVerCombos');
+                    const fila5 = document.getElementById('fila5');
+                    const fila6 = document.getElementById('fila6');
+
+                    // Estado: 0 = solo fila1, 1 = fila1+fila2, 2 = todas
+                    let estado = 0;
+
+                    // Setup inicial: convertimos d-none en hidden-row para poder animar
+                    [fila5, fila6].forEach(f => {
+                        if (f) {
+                            f.classList.add('hidden-row'); // invisible con transición
+                            f.classList.remove('d-none');
+                        }
+                    });
+
+                    btn.addEventListener('click', function() {
+                        if (estado === 0) {
+                            // mostrar fila2
+                            fila5.classList.remove('hidden-row');
+                            fila5.classList.add('visible-row');
+                            estado = 1;
+                            btn.textContent = 'Ver más Productos';
+                            // scroll suave para mostrar fila2 si queda fuera de vista
+                            setTimeout(() => {
+                                fila5.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                            }, 320);
+                        } else if (estado === 1) {
+                            // mostrar fila3
+                            fila6.classList.remove('hidden-row');
+                            fila6.classList.add('visible-row');
+                            estado = 2;
+                            btn.textContent = 'Ver menos';
+                            setTimeout(() => {
+                                fila6.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                            }, 320);
+                        } else {
+                            // ocultar fila2 y fila3
+                            fila5.classList.remove('visible-row'); fila5.classList.add('hidden-row');
+                            fila6.classList.remove('visible-row'); fila6.classList.add('hidden-row');
+                            estado = 0;
+                            btn.textContent = 'Ver más Productos';
+                            // volver a la fila1
+                            setTimeout(() => {
+                                document.getElementById('fila4').scrollIntoView({ behavior: 'smooth', block: 'start' });
+                            }, 320);
+                        }
+                    });
+                })();
+
 
 
             function scrollToCombos() {
